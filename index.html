@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ploughman's lunch backery</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/hamburger-menu.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/79947d7511.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/hamburger-menu.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(function () {
+      $('.bxslider').bxSlider({
+        auto: true, // 自動でスライドショーをスタートさせる　（初期値: false）
+        mode: 'fade', // アニメーションの種類「'horizontal'」「'vertical'」「'fade'」　（初期値: 'horizontal'）
+        speed: 500, // アニメーションのスピード　（初期値: 500）
+        pause: 2300, // 画像の切り替わる間隔　（初期値: 4000）
+        pager: false, // 下部にある画像切り替えボタンの表示・非表示　（初期値: true）
+        controls: false // 左右の矢印の表示・非表示　（初期値: true）
+      });
+    });
+  </script>
+</head>
+
+<body id="home">
+  <div class="page">
+    <header>
+      <!-- ハンバーガーメニュー -->
+      <button class="hamburger-button"></button>
+      <!-- ナビゲーション -->
+      <nav class="hamburger-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="access.html">Access</a></li>
+          <li><a href="online.html">Online Shop</a></li>
+        </ul>
+        <div class="sns">
+          <ul>
+            <li>
+              <p>SNS</p>
+            </li>
+            <li class="facebook"><a href="https://www.facebook.com/plbokinawa" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/ploughmans_okinawa/" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li class="twitter"><a href="https://twitter.com/PloughmansJp" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="left-menu">
+        <p class="left-menu-text">MENU</p>
+        <ul>
+          <li>
+            <p>SNS</p>
+          </li>
+          <li class="facebook"><a href="https://www.facebook.com/plbokinawa" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+          <li class="instagram"><a href="https://www.instagram.com/ploughmans_okinawa/" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+          <li class="twitter"><a href="https://twitter.com/PloughmansJp" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="first-view">
+        <div class="main-menu">
+          <h1>Ploughman's<br>
+            lunch backery</h1>
+          <ul>
+            <li class="hvr-underline-from-center"><a href="#infomation"><i class="fas fa-book"></i><br>infomation</a>
+            </li>
+            <li class="hvr-underline-from-center"><a href="online.html"><i class="fas fa-store"></i><br>online store</a>
+            </li>
+            <li class="hvr-underline-from-center"><a href="menu.html"><i class="fas fa-coffee"></i><br>menu</a></li>
+          </ul>
+        </div>
+        <div class="main-image">
+          <div class="bxslider">
+            <div><img src="images/top-main1.jpg"></div>
+            <div><img src="images/top-main2.jpg"></div>
+            <div><img src="images/top-main3.jpg"></div>
+          </div>
+          <div class="catch">
+            <p class="umi">海を望む</p>
+            <p>丘の上のベーカリー</p>
+          </div>
+        </div>
+      </div>
+      <div class="second-view">
+        <h2 data-scroll-on="0" data-playback style="transition: all 1s ease 0s;" id="infomation">
+          <span>沖縄県北中城村の</span><br>
+          <span>海を望む 丘の上のベーカリーカフェ</span>
+        </h2>
+        <div class="sub-image">
+          <img data-scroll-on="0" data-playback style="transition: all 1s ease 0s;" src="images/top-sub.jpg">
+          <div data-scroll-on="0" data-playback style="transition: all 1s ease 0s;" class="info">
+            <h3>Ploughman's lunch backery</h3>
+            <adress>〒901-2316<br>
+              沖縄県 中頭郡 北中城村 安谷屋 927-2 <a href="https://goo.gl/maps/a2ApZJV2VKf7JAW37" target="_blank"
+                rel="noopener noreferrer">▶Google Map</a><br><span>
+                おきなわけん なかがみぐん きたなかぐすくそん あだにや</span>
+            </adress>
+            <p>TEL/FAX： 098-(979)-9097<br>
+              営業時間： <del>8:00 - 16:00</del>&ensp; 9:00 ‐ 16:00 （L.O&ensp;15:00）<br>
+              定休日： 日曜日<br>
+              ※現在、営業時間を短縮しております。<br>
+              ※パンの通販は引き続き、全国配送しております。<br>
+            </p>
+            <p class="yoyaku">
+              ●ご予約： 当日の電話予約のみ承っております。<br>
+              ●お問合せ： ご質問などはお気軽にお電話ください。<br>
+              取材のご依頼などについては、<br>
+              下記メールアドレスまでご連絡ください。<br>
+              <a href="mailto:okinawa@ploughmans.net">
+                <i class="far fa-envelope"></i>&ensp;okinawa@ploughmans.net</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="back-top scroll-fade"><a href="#top"><i class="fas fa-sort-amount-up-alt"></i></a></p>
+    </main>
+    <footer>
+      <p><small>copyright&copy;Ploughman's lunch backery. all rights reserved.</small></p>
+    </footer>
+  </div>
+</body>
+
+</html>

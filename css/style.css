@@ -1,0 +1,827 @@
+@charset "UTF-8";
+
+/*--------------
+    全体構造
+ -------------- */
+body {
+  background-color: #F7F6F5;
+  font-family: 'Shippori Mincho', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  margin: 0 auto;
+}
+
+footer p {
+  background-color: rgba(112, 112, 112, .6);
+  height: 90px;
+  line-height: 120px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 360px;
+}
+
+/* ページ上部へ戻る */
+.back-top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  display: none;
+  font-size: 30px;
+  background-color: #EED1CB;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.back-top a {
+  color: #707070;
+}
+
+/* ------ ナビゲーションメニュー（fixed ）------ */
+.left-menu {
+  width: 60px;
+  height: 100vh;
+  background-color: #EED1CB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* 「MENU」というテキスト部分 */
+.left-menu-text {
+  font-size: 12px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* 「SNS」 */
+.left-menu ul {
+  position: absolute;
+  bottom: 40px;
+  left: 14px;
+}
+
+.left-menu li p {
+  font-size: 13px;
+}
+
+.left-menu li {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.left-menu a {
+  color: #707070;
+  font-size: 24px;
+}
+
+/* ハンバーガーメニュー */
+.hamburger-button path {
+  fill: #707070
+}
+
+/*--- メニューボタン ---*/
+.hamburger-button {
+  background-color: #EED1CB;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+/*--- アイコン ---*/
+.hamburger-button svg {
+  width: 25px;
+  height: 25px;
+}
+
+/*--- ナビゲーション ---*/
+.hamburger-nav {
+  background-color: #EED1CB;
+  width: 100px;
+  height: 100vh;
+}
+
+.hamburger-nav ul {
+  margin-top: 100px;
+}
+
+.hamburger-nav li {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.hamburger-nav a {
+  border-bottom: 1px solid #707070;
+  line-height: 1.5;
+  color: #707070;
+  transition: color 0.3s;
+}
+
+.hamburger-nav a:hover {
+  font-size: 19px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, .5);
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+/*--- ナビゲーション（下部のSNS部分） ---*/
+.sns ul {
+  position: absolute;
+  bottom: 40px;
+  left: 14px;
+}
+
+.sns p {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.sns li {
+  margin-bottom: 0px;
+}
+
+.sns a {
+  border-bottom: none;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 10px;
+}
+
+.facebook a:hover {
+  color: #4867AA;
+  font-size: 36px;
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.instagram a:hover {
+  color: #FF8C00;
+  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  border-bottom: none;
+}
+
+.twitter a:hover {
+  color: #1DA1F2;
+  font-size: 36px;
+  border-bottom: none;
+  background-color: transparent;
+}
+
+/*--------------
+    トップページ
+ -------------- */
+
+/* メイン（ファーストビュー） */
+
+#home main .first-view {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  background-color: #DEDDDD;
+}
+
+/* メイン（左側） */
+#home .main-menu {
+  width: 580px;
+}
+
+#home main h1 {
+  font-size: 50px;
+  font-family: 'Abril Fatface';
+  color: #595757;
+  margin: 200px 90px 30px 160px;
+  text-align: justify;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+#home main ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 60px 0 120px;
+}
+
+#home main ul li {
+  border-right: 1px dashed #595757;
+  padding: 10px;
+  width: 110px;
+  height: 70px;
+}
+
+#home main ul li:nth-child(1) {
+  border-left: 1px dashed #595757;
+}
+
+#home main ul li:nth-child(2) {
+  white-space: nowrap;
+}
+
+#home main ul li a {
+  display: block;
+  color: #595757;
+}
+
+#home main ul li i {
+  font-size: 22px;
+  margin: 0 auto 4px auto;
+}
+
+/*info,online store,menu のマウスホバー時の色 */
+.hvr-underline-from-center:before {
+  background: #E6ACA1;
+}
+
+/* メイン（右側） */
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+#home .main-image {
+  display: flex;
+  position: relative;
+  margin-top: -50px;
+}
+
+.bxslider {
+  width: 620px !important;
+  height: 820px !important;
+}
+
+#home .catch {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+#home .catch p {
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  margin-left: -150px;
+  padding: 0 10px;
+  width: 170px;
+}
+
+#home .catch p.umi {
+  width: 90px;
+  margin-left: -70px;
+}
+
+/* メイン（店舗情報） */
+#home h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 60px;
+  opacity: 0;
+}
+
+#home h2.on {
+  opacity: 1;
+}
+
+#home h2 span {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  padding: 10px;
+}
+
+#home .second-view {
+  background-image: url(../images/bg-body2.png);
+}
+
+#home .sub-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home .sub-image img {
+  margin-bottom: 60px;
+  opacity: 0;
+}
+
+#home .sub-image img.on {
+  opacity: 1;
+}
+
+#home .info {
+  margin-top: 30px;
+  margin-left: 100px;
+  opacity: 0;
+}
+
+#home .info.on {
+  opacity: 1;
+}
+
+#home .info h3 {
+  font-size: 28px;
+  font-family: 'Abril Fatface';
+  margin-bottom: 50px;
+}
+
+#home .info adress {
+  font-size: 16px;
+  line-height: 1.8;
+  display: inline-block;
+  /* ↑マージンを有効にするためのdisplay */
+  margin-bottom: 20px;
+}
+
+#home .info adress span {
+  font-size: 14px;
+}
+
+#home .info adress a {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+#home .info p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#home .yoyaku a {
+  color: #595757;
+  border-bottom: 1px solid #595757;
+}
+
+#home .info i {
+  color: #595757;
+  border-bottom: none;
+}
+
+/* フッター */
+#home footer {
+  background-image: url(../images/footer-top.jpg);
+  height: 450px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*-----------------
+    メニューページ
+ ------------------ */
+/* メニューページ ヘッダー*/
+#menu .header-image {
+  background-image: url(../images/header-menu.jpg);
+  height: 330px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 見出し */
+#menu header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #F7F6F5;
+  width: 650px;
+  height: 100px;
+  line-height: 100px;
+  margin: -100px auto 60px auto;
+}
+
+#menu span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+/* メニュー一覧 */
+#menu section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+#menu section h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+#menu section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 2.4;
+}
+
+#menu section img {
+  width: 40%;
+  height: auto;
+  opacity: 0;
+}
+
+#menu section img.on {
+  opacity: 1;
+}
+
+#menu section .menu-text-left-1 {
+  width: 600px;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+
+#menu section .menu-text-left-2 {
+  width: 390px;
+  margin-right: 50px;
+  margin-left: 100px;
+}
+
+#menu section .menu-text-left-3 {
+  width: 330px;
+  margin-right: 200px;
+  margin-left: 100px;
+}
+
+#menu section .menu-text-right-1 {
+  width: 410px;
+  margin-left: 50px;
+}
+
+#menu section .menu-text-right-2 {
+  width: 410px;
+  margin-left: 100px;
+}
+
+.sandwich {
+  background-color: #E4E0DE;
+  padding-top: 50px;
+}
+
+.tea {
+  background-color: #E4E0DE;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/*  フッター */
+#menu footer {
+  background-image: url(../images/footer-menu.jpg);
+  height: 450px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*--------------
+    ブログページ
+ -------------- */
+/* ブログページ ヘッダー*/
+#blog .header-image {
+  background-image: url(../images/header-blog.jpg);
+  height: 330px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*--- 見出し ---*/
+#blog header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #F7F6F5;
+  width: 650px;
+  height: 100px;
+  line-height: 100px;
+  margin: -100px auto 60px auto;
+}
+
+#blog .message {
+  width: 410px;
+  margin: 0 auto 90px auto;
+}
+
+#blog .message p {
+  margin-bottom: 30px;
+  line-height: 2.0;
+}
+
+/*--- ブログ記事一覧--- */
+#blog .blog-ichiran {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#blog .text {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  padding: 50px 30px 0 30px;
+  margin-top: -105px;
+  margin-left: 180px;
+  position: relative;
+}
+
+#blog section time {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #595757;
+  padding-bottom: 6px;
+}
+
+#blog .text p {
+  line-height: 1.6;
+}
+
+.hvr-trim:before {
+  border: white solid 3px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.hvr-trim:hover {
+  opacity: 0.5;
+  transition: 0.5s all;
+}
+
+#blog .pager {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+
+#blog span {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #EED1CB;
+  color: #000;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  font-size: 20px;
+}
+
+/*  フッター */
+#blog footer {
+  background-image: url(../images/footer-blog.jpg);
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/*-----------------
+    アクセスページ
+ ------------------ */
+#access .header-image {
+  background-image: url(../images/header-access.jpg);
+  height: 330px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#access .access-joho {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+#access .access-joho-right {
+  margin: 10px 0 0 100px;
+  margin-left: 100px;
+}
+
+#access .access-joho-right h3 {
+  font-size: 30px;
+  font-family: 'Abril Fatface';
+  margin-bottom: 30px;
+}
+
+#access .access-joho-right address {
+  line-height: 1.7;
+  display: inline-block;
+  margin-bottom: -300px;
+}
+
+#access .access-joho-right address span {
+  font-size: 14px;
+  margin-left: -15px;
+}
+
+#access .access-joho-right-center {
+  margin-bottom: 20px;
+}
+
+#access .access-joho-right p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#access .access-joho-right p a {
+  color: #000;
+  border-bottom: solid 1px #000;
+}
+
+#access .access-joho-right address a {
+  color: #000;
+  border-bottom: 1px solid red;
+}
+
+#access footer {
+  background-image: url(../images/footer-access.png);
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: center bottom;
+}
+
+/*-----------
+  ニュースページ
+  -------------*/
+#news .header-image {
+  background-image: url(../images/header-news.png);
+  height: 330px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#news main {
+  margin: 0 auto 90px auto;
+}
+
+#news .news-ichiran {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+#news .news-ichiran .news-left {
+  width: 650px;
+  margin: 20px 30px auto 30px;
+}
+
+#news .news-ichiran .news-left .news-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#news .news-ichiran .news-left .news-text {
+  line-height: 1.6;
+}
+
+#news .news-ichiran .news-left .news-text a {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+#news footer {
+  background-image: url(../images/footer-news.png);
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: center bottom;
+}
+
+/*-----------
+  オンラインページ
+  -------------*/
+#online .header-image {
+  background-image: url(../images/header-online.png);
+  height: 330px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#online .online-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#online .online-message p {
+  margin-bottom: 20px;
+}
+
+#online .online-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+#online .online-top img {
+  margin-right: 20px;
+}
+
+#online .online-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+#online .online-bottom img {
+  margin-right: 20px;
+}
+
+#online section p {
+  color: #000;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+#online section p span {
+  color: #B1B0B0;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+#online section p .soldout {
+  color: red;
+  font-size: 14px;
+}
+
+#online footer {
+  background-image: url(../images/footer-online.png);
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: center bottom;
+}
+
+/*-----------
+  その他のページ
+  -------------*/
+
+/* 見出し */
+#about header h1,
+#news header h1,
+#access header h1,
+#contact header h1,
+#online header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #F7F6F5;
+  width: 650px;
+  height: 100px;
+  line-height: 100px;
+  margin: -100px auto 60px auto;
+}
